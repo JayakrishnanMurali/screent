@@ -20,11 +20,13 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen bg-light-50 container  text-light-900 antialiased dark:bg-dark-900 dark:text-dark-50",
+          "min-h-screen bg-light-50  2xl:m-auto   text-light-900 antialiased dark:bg-dark-900 dark:text-dark-50",
           fontSans.className
         )}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <div className="container">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   )
