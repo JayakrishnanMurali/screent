@@ -77,7 +77,7 @@ const BlockQuote = React.forwardRef<
   <blockquote
     ref={ref}
     className={cn(
-      "mt-6 border-l-2 border-light-300 pl-6 italic text-light-800 dark:border-dark-600 dark:text-dark-200",
+      "mt-6 border-l-2 border-theme-300 pl-6 italic text-theme-800 dark:border-theme-600 dark:text-theme-200",
       className
     )}
     {...props}
@@ -109,7 +109,7 @@ const InlineCode = React.forwardRef<
   <code
     ref={ref}
     className={cn(
-      "relative rounded bg-light-100 py-[0.2rem] px-[0.3rem] font-mono text-sm font-semibold text-light-900 dark:bg-dark-800 dark:text-dark-400",
+      "relative rounded bg-theme-100 py-[0.2rem] px-[0.3rem] font-mono text-sm font-semibold text-theme-900 dark:bg-theme-800 dark:text-theme-400",
       className
     )}
     {...props}
@@ -122,7 +122,7 @@ const Lead = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("text-xl text-light-700 dark:text-dark-400", className)}
+    className={cn("text-xl text-theme-700 dark:text-theme-400", className)}
     {...props}
   />
 ))
@@ -134,7 +134,7 @@ const Large = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "text-lg font-semibold text-light-900 dark:text-dark-50",
+      "text-lg font-semibold text-theme-900 dark:text-theme-50",
       className
     )}
     {...props}
@@ -158,7 +158,7 @@ const Subtle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("text-sm text-light-500 dark:text-dark-400", className)}
+    className={cn("text-sm text-theme-500 dark:text-theme-400", className)}
     {...props}
   />
 ))

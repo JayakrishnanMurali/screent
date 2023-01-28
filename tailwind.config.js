@@ -21,7 +21,7 @@ module.exports = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
-        dark: {
+        theme: {
           900: "#111827",
           800: "#1f2937",
           700: "#374151",
@@ -32,18 +32,6 @@ module.exports = {
           200: "#e4e4e7",
           100: "#f3f4f6",
           50: "#f9fafb",
-        },
-        light: {
-          900: "#18181b",
-          800: "#27272a",
-          700: "#3f3f46",
-          600: "#52525b",
-          500: "#71717a",
-          400: "#a1a1aa",
-          300: "#d4d4d8",
-          200: "#e4e4e7",
-          100: "#f4f4f5",
-          50: "#fafafa",
         },
         accent: {
           500: "#84cc16",
