@@ -10,7 +10,7 @@ interface MetaInterface {
 
 const Meta = ({ title, description = SITE_DESCRIPTION }: MetaInterface) => {
   return (
-    <Head>
+    <>
       <title>{`${SITE_NAME} | ${title}`}</title>
       <meta name="description" content={description} />
       <link rel="icon" href="/favicon.ico" />
@@ -29,7 +29,7 @@ const Meta = ({ title, description = SITE_DESCRIPTION }: MetaInterface) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {/* <meta name="twitter:image" content={image} /> */}
-    </Head>
+    </>
   )
 }
 

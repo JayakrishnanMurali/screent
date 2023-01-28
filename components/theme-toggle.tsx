@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 import { useTheme } from "next-themes"
 
@@ -17,7 +19,7 @@ export function ThemeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm">
-          <Icons.sun className="hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100" />
+          <Icons.sun className="hover:text-light-900 dark:text-dark-400 dark:hover:text-dark-100" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
